@@ -1,0 +1,24 @@
+body {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #141D27;
+  font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width: 400px) {
+  .nav-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav-container ul li {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .item-wrapper {
+    flex-direction: column;
+  }
+  .img img {
+    margin-bottom: 20px;
+  }
+}

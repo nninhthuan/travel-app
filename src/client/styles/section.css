@@ -1,0 +1,19 @@
+.item-wrapper {
+  display: flex;
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.description-wrapper {
+  margin-left: 20px;
+}
+.travel-country span, .departing-time span {
+  color: #818F99;
+}

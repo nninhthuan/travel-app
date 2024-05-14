@@ -1,0 +1,17 @@
+
+.nav-container {
+  margin: 10px 0px; 
+  cursor: default;
+  font-weight: 700;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+}
+li:hover {
+  color: #fa6604;
+  font-weight: 700;
+}
