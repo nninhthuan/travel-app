@@ -4,11 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Capstone - Travel App</title>
-  <link rel="stylesheet" href="../styles/base.css">
-  <link rel="stylesheet" href="../styles/nav-bar.css">
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="stylesheet" href="../styles/input.css">
-  <link rel="stylesheet" href="../styles/section.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -22,9 +17,9 @@
       </ul>
     </nav>
     <main class="main-container container">
-      <form class="search-wrapper">
+      <form class="search-wrapper d-flex align-items-center">
         <input class="search-input" type="text" placeholder="Enter country travel">
-        <input class="departing" type="text" placeholder="MM/DD/YYYY">
+        <input class="departing" type="date" placeholder="MM/DD/YYYY">
         <input class="submit-button" type="button" value="Search">
       </form>
 
@@ -32,7 +27,7 @@
         <h2 class="my-4">Travel Estimation Result: </h2>
         <div class="item-wrapper">
           <div class="img">
-            <img src="../media/paris.png" alt="french">
+            <img src="/paris.png" alt="french">
           </div>
           <div class="description-wrapper">
             <div class="departing-label">
@@ -42,6 +37,15 @@
             <div class="interactive-travel">
               <input type="button" class="save-trip" value="save trip">
               <input type="button" class="remove-trip" value="remove trip">
+            </div>
+
+            <div class="weather-forecast">
+              <p class="departing-date">Paris, France is 220 days away</p>
+              <div class="typical-weather">
+                <p class="text">Typical weather for then is:</p>
+                <p class="weather">High - 46, Low - 35</p>
+                <p class="forecast">Most cloudy throughout the day</p>
+              </div>
             </div>
           </div>
         </div>

@@ -23,12 +23,15 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'logo.png'
+              name: 'paris.png'
             },
           },
         ],
       },
     ],
+  },
+  performance: {
+    hints: false,
   },
   plugins: [
     new HtmlWebPackPlugin({

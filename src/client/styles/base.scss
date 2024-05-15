@@ -3,7 +3,6 @@ body {
   letter-spacing: 1px;
   font-weight: 400;
   color: #141D27;
-  font-family: 'Courier New', Courier, monospace;
 }
 @media (max-width: 400px) {
   .nav-container ul {
@@ -14,7 +13,7 @@ body {
     padding-bottom: 10px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .item-wrapper {
     flex-direction: column;
   }

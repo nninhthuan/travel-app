@@ -18,3 +18,8 @@ app.listen(8000, function () {
 app.get("/", function (req, res) {
   res.sendFile('/dist/index.html', { root: '.' });
 });
+
+const weatherbit_apikey = '0fa1512f75ae4d4a83a2300568f6d981';
+app.get("/weatherbit-apikey", function (req, res) {
+  res.send(weatherbit_apikey);
+});
