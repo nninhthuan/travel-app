@@ -13,4 +13,7 @@ input {
   width: 150px;
   max-width: 200px;
   background-color:bisque;
+  &:hover {
+    filter: drop-shadow(5px 5px 2px red);
+  }
 }

@@ -4,6 +4,20 @@ body {
   font-weight: 400;
   color: #141D27;
 }
+@keyframes slide {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
+
+.no-result {
+  font-weight: 700;
+  color: #818F99;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 120px;
+  animation: slide 5s ease-out infinite;
+
+}
 @media (max-width: 400px) {
   .nav-container ul {
     display: grid;

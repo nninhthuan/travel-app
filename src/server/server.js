@@ -23,3 +23,8 @@ const weatherbit_apikey = '0fa1512f75ae4d4a83a2300568f6d981';
 app.get("/weatherbit-apikey", function (req, res) {
   res.send(weatherbit_apikey);
 });
+
+const pixabay_apikey = '43873101-4d2e2dfcba092b00e7548a57e';
+app.get("/pixabay-apikey", function (req, res) {
+  res.send(pixabay_apikey);
+});
