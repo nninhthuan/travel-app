@@ -56,3 +56,9 @@
 .typical-weather {
   color: #697E93
 }
+
+.weather-forecast ul li {
+  &:hover {
+    color: transparent;
+  }
+}

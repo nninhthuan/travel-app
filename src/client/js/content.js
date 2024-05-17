@@ -15,7 +15,25 @@ export function changeContent (data) {
   document.querySelector('.img img').src = data.src; //Change src image based on country
 
   if (isFutureDay) {
+    //if the date is comming soon
     document.querySelector('.departing-date').textContent = `${data.country} trip is ${twoGapsDate} days away`;
+    document.querySelector('.weather').innerHTML = 
+    `<ul>
+      <li>Temperature: ${data.weatherData.temp}</li>
+      <li>Sunrise: ${data.weatherData.sunrise}</li>
+      <li>Sunset: ${data.weatherData.sunset}</li>
+      <li>Wind speed: ${data.weatherData.wind_spd}</li>
+    </ul>`;
+    document.querySelector('.weather ul').style.flexDirection = 'column';
+    document.querySelector('.forecast').textContent = `Wind speed is forecasted is ${data.weatherData.wind_spd}`;
+  } else {
+    //if the date is past date
+    document.querySelector('.departing-date').textContent = `${data.country}'s trip have been occured ${twoGapsDate} days ago`;
+    document.querySelector('.weather').innerHTML = 
+    `<ul>
+      <li>Temperature: ${data.weatherData.temp}</li>
+      <li>Wind speed: ${data.weatherData.wind_spd}</li>
+    </ul>`;
+    document.querySelector('.weather ul').style.flexDirection = 'column';
   }
- 
 }

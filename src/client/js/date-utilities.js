@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export function convertToDate(departingDate) {
   const date = new Date(departingDate);
   let day, month, year;
@@ -22,5 +24,10 @@ export function isFutureDate(departingDate) {
 }
 
 export function twoDaysGap(departingDate) {
-  return 120;
+  const date1 = moment(new Date(departingDate));
+  const date2 = moment(new Date());
+
+  const dayDiff = date2.diff(date1, 'days');
+
+  return Math.abs(dayDiff);
 }
