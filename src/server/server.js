@@ -3,7 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const dotenv = require('dotenv');
 const cors = require("cors");
-
+const sendAPIKeyPixabay = require("./controller");
+const sendAPIKeyWeatherBit = require("./controller");
 const app = express();
 
 dotenv.config();
@@ -19,12 +20,6 @@ app.get("/", function (req, res) {
   res.sendFile('/dist/index.html', { root: '.' });
 });
 
-const weatherbit_apikey = '0fa1512f75ae4d4a83a2300568f6d981';
-app.get("/weatherbit-apikey", function (req, res) {
-  res.send(weatherbit_apikey);
-});
+app.get("/weatherbit-apikey", sendAPIKeyWeatherBit);
 
-const pixabay_apikey = '43873101-4d2e2dfcba092b00e7548a57e';
-app.get("/pixabay-apikey", function (req, res) {
-  res.send(pixabay_apikey);
-});
+app.get("/pixabay-apikey", sendAPIKeyPixabay);
