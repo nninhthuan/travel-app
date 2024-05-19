@@ -1,5 +1,5 @@
-const sendAPIKeyWeatherBit = require('./src/server/controller');
-const sendAPIKeyPixabay = require('./src/server/controller');
+const sendAPIKeyWeatherBit = require('../controller');
+const sendAPIKeyPixabay = require('../controller');
 
 const body = {
   req: '',

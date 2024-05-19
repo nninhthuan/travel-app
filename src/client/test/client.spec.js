@@ -1,4 +1,4 @@
-import { convertToDate, isFutureDate, twoDaysGap } from "./src/client/js/date-utilities";
+import { convertToDate, isFutureDate, twoDaysGap } from "../js/date-utilities";
 
 /**
  * @jest-environment jsdom
